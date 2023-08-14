@@ -1,11 +1,19 @@
-import { Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import { AddProduct } from "./components/AddProduct";
+import { ShowProduct } from "./components/ShowProduct";
 
 function App() {
   return (
-    <>
-      <h1>Halo dunia</h1>
-      <Button>Halo</Button>
-    </>
+    <Container className="mt-5">
+      <Row>
+        <Col>
+          <AddProduct />
+        </Col>
+        <Col>
+          <ShowProduct />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
