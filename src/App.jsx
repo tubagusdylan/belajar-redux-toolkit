@@ -1,19 +1,20 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import { AddProduct } from "./components/AddProduct";
 import { ShowProduct } from "./components/ShowProduct";
+import { EditProduct } from "./components/EditProduct";
 
 function App() {
   return (
-    <Container className="mt-5">
-      <Row>
-        <Col>
-          <AddProduct />
-        </Col>
-        <Col>
-          <ShowProduct />
-        </Col>
-      </Row>
-    </Container>
+    <BrowserRouter>
+      <Container className="mt-5">
+        <Routes>
+          <Route path="/" element={<ShowProduct />} />
+          <Route path="/add" element={<AddProduct />} />
+          <Route path="/edit/:id" element={<EditProduct />} />
+        </Routes>
+      </Container>
+    </BrowserRouter>
   );
 }
 
