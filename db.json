@@ -4,6 +4,26 @@
       "title": "Product 1",
       "price": "2000",
       "id": 1
+    },
+    {
+      "title": "Product updated",
+      "price": "100000",
+      "id": 2
+    },
+    {
+      "title": "Product 3",
+      "price": "5000",
+      "id": 3
+    },
+    {
+      "title": "Product 5",
+      "price": "1000000",
+      "id": 4
+    },
+    {
+      "title": "Product 6",
+      "price": "10000",
+      "id": 5
     }
   ]
 }
